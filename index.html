@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Rfilme</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top position-absolute">
+    <div class="container-fluid">
+      <a href="index.html"><img src="img/logotipo.png" alt="logotipo Rfilme" width="38"></a>
+      <a class="navbar-brand ms-lg-2" href="index.html">Rfilme</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="d-flex navbar-nav ms-auto">
+          <a class="btn btn-warning" href="cadastro.html" role="button">ASSINE AGORA</a>
+          <a class="btn btn-outline-light ms-2" href="login.html" role="button">ENTRAR</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="img/bgblackweek.png" alt="blackweek" class="img-carousel">
+          <div class="container">
+            <div class="carousel-caption text-start" style="bottom: 5.90rem;">
+              <h1 style="width: 50%; margin-bottom: 10px;">Aproveite a Black Week</h1>
+              <div>Aproveite a Black Week Rfilme! A maior promoção do</div>
+              <div style="width: 100%;">entretenimento com Plano Mensal por apenas R$ 6,90</div>
+              <div style="width: 100%; margin-bottom: 16px;">nos 2 primeiros meses.</div>
+              <p><a class="btn btn-lg btn-warning mt-1" href="cadastro.html">ASSINE AGORA</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <video autoplay muted loop id="video-carousel">
+            <source src="media/bgvideo.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="container">
+            <div class="carousel-caption" style="bottom: 5.90rem;">
+              <h1 style="width: 50%; margin: auto; margin-bottom: 16px;">Filmes, séries e muito mais. Sem limites.</h1>
+              <h4>Assista onde quiser. Cancele quando quiser.</h4>
+              <p><a class="btn btn-lg btn-warning mt-3" href="#">ASSINE AGORA</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container pt-5">
+      <h3>Mais Populares</h3>
+      <div class="linha bg-warning bg-gradient"></div>
+      <div class="movies mx-lg-4">
+        <img src="https://image.tmdb.org/t/p/w185///ArrOBeio968bUuUOtEpKa1teIh4.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///pe17f8VDfzbvbHSAKAlcORtBHmW.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///h5UzYZquMwO9FVn15R2eK2itmHu.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///luE0KG1rWfUptbgNtlNtL5sihyd.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///s7Cn3OsY32tH5cyz7CHxYdEiXMn.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///jKuDyqx7jrjiR9cDzB5pxzhJAdv.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///chTkFGToW5bsyw3hgLAe4S5Gt3.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///gII53HAH7UA1yx189vROMzWA5ib.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///eDHOutMxLMgComnVhUK0Xfwunu5.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///kxFxtYdaIaGsp3N9KEtPSj7yqEE.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///eZwC4FW5rFvYa0gzZJIHQwLSgbz.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///uzERcfV2rSHNhW5eViQiO9hNiA7.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///29WYtxffy1NJhxXZ8al5XJ8US1s.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///lxPZYziABs5MUmyV6tUOO5mTK2z.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///7cVFRHlN2gPWIEQnz6Yo43fYVkL.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///jXlGeLOg2RKHmV9CinVaIB4ijKU.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///50SJI2Cbs4m9vhtrd9TVFEIX9n4.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///dODKvv9o9BOemWavnulutJBHM80.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///apZJb9kdHXhPu6oDTeztDSd41zw.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///lgQ4vA8BnMgXfSAVbxHiPcqapB7.jpg" class="img-movie">
+      </div>
+    </div>
+
+    <div class="container pt-3">
+      <h3>Lançamentos</h3>
+      <div class="linha bg-warning bg-gradient"></div>
+      <div class="movies">
+        <img src="https://image.tmdb.org/t/p/w185///ArrOBeio968bUuUOtEpKa1teIh4.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///pe17f8VDfzbvbHSAKAlcORtBHmW.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///h5UzYZquMwO9FVn15R2eK2itmHu.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///luE0KG1rWfUptbgNtlNtL5sihyd.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///s7Cn3OsY32tH5cyz7CHxYdEiXMn.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///jKuDyqx7jrjiR9cDzB5pxzhJAdv.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///chTkFGToW5bsyw3hgLAe4S5Gt3.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///gII53HAH7UA1yx189vROMzWA5ib.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///eDHOutMxLMgComnVhUK0Xfwunu5.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///kxFxtYdaIaGsp3N9KEtPSj7yqEE.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///eZwC4FW5rFvYa0gzZJIHQwLSgbz.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///uzERcfV2rSHNhW5eViQiO9hNiA7.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///29WYtxffy1NJhxXZ8al5XJ8US1s.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///lxPZYziABs5MUmyV6tUOO5mTK2z.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///7cVFRHlN2gPWIEQnz6Yo43fYVkL.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///jXlGeLOg2RKHmV9CinVaIB4ijKU.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///50SJI2Cbs4m9vhtrd9TVFEIX9n4.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///dODKvv9o9BOemWavnulutJBHM80.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///apZJb9kdHXhPu6oDTeztDSd41zw.jpg" class="img-movie">
+        <img src="https://image.tmdb.org/t/p/w185///lgQ4vA8BnMgXfSAVbxHiPcqapB7.jpg" class="img-movie">
+      </div>
+    </div>
+    <div class="banner-img d-flex justify-content-center mt-5">
+      <div class="text-center">
+        <h1 class="mb-4" style="width: 75%; margin: auto;">Filmes, séries e muito mais. Sem limites.</h1>
+        <h4>Assista onde quiser. Cancele quando quiser.</h4>
+        <p><a class="btn btn-lg btn-warning mt-3" href="cadastro.html">ASSINE AGORA</a></p>
+      </div>
+    </div>
+    <div class="bg-gradient pt-5 pb-5">
+      <div class="container">
+        <div class="text-center mt-4 mb-5">
+          <h3>Disponível nos seus dispositivos favoritos</h3>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center text-center p-3">
+          <div>
+            <img src="img/tv.png" alt="tv" width="250">
+            <div class="linha linha-center bg-warning bg-gradient"></div>
+            <div>Smart TVs</div>
+          </div>
+          <div class="ms-5">
+            <img src="img/pc.png" alt="pc" width="250">
+            <div class="linha linha-center bg-warning bg-gradient"></div>
+            <div>PC</div>
+          </div>
+          <div class="mb-5">
+            <img src="img/console.png" alt="video-game" width="250">
+            <div class="linha linha-center bg-warning bg-gradient"></div>
+            <div>Video-games</div>
+          </div>
+          <div class="">
+            <img src="img/celular.png" alt="celular" width="250">
+            <div class="linha linha-center bg-warning bg-gradient"></div>
+            <div>Smartphones e Tablets</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-black p-2 mt-auto">
+    <div class="container d-flex justify-content-between">
+      <div>
+        &#169; 2021 - Rfilme
+      </div>
+      <div>
+        Desenvolvido por Rafael Rossi
+      </div>
+    </div>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+  <script src="js/slick.js"></script>
+  <script>
+    var myCarousel = document.querySelector('#myCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 10000,
+      wrap: true
+    });
+  </script>
+</body>
+
+</html>
